@@ -1,14 +1,17 @@
 # 📚 도담도담  
 다문화 가정 학생과 부모를 위한 AI 한국어 교육 지원 및 발음 향상 어플리케이션
 
-## Table of contents
+## 📄Table of contents
 0. [폴더 구조]()
-1. [프로젝트 진행기간]()
-2. [배경]()
-3. [개요]()
-4. [주요기능]()
-5. [개발환경]()
-6. [ERD]()
+1. [프로젝트 진행기간](https://github.com/yyeongha/Dodam-Dodam#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A7%84%ED%96%89%EA%B8%B0%EA%B0%84-)
+2. [배경](https://github.com/yyeongha/Dodam-Dodam#%EF%B8%8F-%EB%B0%B0%EA%B2%BD)
+3. [개요](https://github.com/yyeongha/Dodam-Dodam?tab=readme-ov-file#%EF%B8%8F-%EA%B0%9C%EC%9A%94)
+4. [주요기능](https://github.com/yyeongha/Dodam-Dodam?tab=readme-ov-file#%EF%B8%8F-%EC%A3%BC%EC%9A%94%EA%B8%B0%EB%8A%A5)
+5. [개발환경](https://github.com/yyeongha/Dodam-Dodam?tab=readme-ov-file#%EF%B8%8F-%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD)
+6. [ERD](https://github.com/yyeongha/Dodam-Dodam?tab=readme-ov-file#-erd)
+
+## 폴더 구조
+
 
 ## 🏃 프로젝트 진행기간 🏃
 2024.04.08 ~ 2024.04.28
