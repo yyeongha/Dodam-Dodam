@@ -43,7 +43,7 @@
 또한 TTS와 STT 기술을 활용함으로써, 사용자는 마치 실제 상황에 있는 것처럼 자연스러운 대화를 경험할 수 있게 도와준다.
 
 ## 🖥️ 개발환경
-* 데이터
+### 🖱 데이터
   * 책 : 국립어린이 청소년도서관 다국어동화구연 한국전래동화 API를 통해 책 제목, 내용, Image에 대한 데이터를 수집
 
   [국립어린이 청소년도서관 다국어동화구연-한국전래동화 API](https://www.culture.go.kr/data/openapi/openapiView.do?id=391&keyword=%EB%8B%A4%EA%B5%AD%EC%96%B4%EB%8F%99%ED%99%94%EA%B5%AC%EC%97%B0_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%9E%98%EB%8F%99%ED%99%94&searchField=all&gubun=A)
@@ -58,15 +58,15 @@
 * kospeech
 * speechfeedback
 
-* 기술 스택
+### 🖱 기술 스택
 
-|분야|사용기술|
+|:분야:|:사용기술:|
 |---|---|
-|IDE|VSCode, Colab|
-|OS|Ubuntu22.04|
-|CI/CD|docker|
-|Design|Figma|
-|Tool|Notion|
+|:IDE:|:VSCode, Colab:|
+|:OS:|:Ubuntu22.04:|
+|:CI/CD:|:docker:|
+|:Design:|:Figma:|
+|:Tool:|:Notion:|
 
 
 ## 📈 ERD
