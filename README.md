@@ -48,7 +48,8 @@
 
   [국립어린이 청소년도서관 다국어동화구연-한국전래동화 API](https://www.culture.go.kr/data/openapi/openapiView.do?id=391&keyword=%EB%8B%A4%EA%B5%AD%EC%96%B4%EB%8F%99%ED%99%94%EA%B5%AC%EC%97%B0_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%9E%98%EB%8F%99%ED%99%94&searchField=all&gubun=A)
     
-  * 챗봇 : AI Hub 한국어 대화
+  * 챗봇 : AI Hub 한국어 대화, 주제별 텍스트 일생 대화 데이터
+
   [AI Hub 한국어 대화](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=data&dataSetSn=116)
 
   [AI Hub 주제별 텍스트 일생 대화 데이터](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=543)
@@ -58,13 +59,14 @@
 * speechfeedback
 
 * 기술 스택
-|:분야:|:사용기술:|
+
+|분야|사용기술|
 |---|---|
-|:IDE:|:VSCode, Colab:|
-|:OS:|:Ubuntu22.04:|
-|:CI/CD:|:docker:|
-|:Design:|:Figma:|
-|:Tool:|:Notion:|
+|IDE|VSCode, Colab|
+|OS|Ubuntu22.04|
+|CI/CD|docker|
+|Design|Figma|
+|Tool|Notion|
 
 
 ## 📈 ERD
