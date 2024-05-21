@@ -53,18 +53,21 @@
 해당 기능을 통해 사용자는 독립적으로 발음을 연습하고 교정할 수 있기 때문에, 방문 교육지도사 없이도 효과적인 교육이 가능하므로 다문화 자녀 교육 지원에 사용되는 예산을 절감할 수 있고, 다문화 가정에서는 경제적 부담을 줄일 수 있다.
 
 #### 1. 음성인식
-사용자가 말하는 음성을 녹음하고, 이 녹음된 음성을 텍스트로 변환하는 과정에서 'KoSpeech' 모델을 사용한다. KoSpeech는 한국어 전문 자동 음성 인식(ASR)을 위한 오픈 소스 툴킷으로, PyTorch 기반으로 작동한다. 이 툴킷은 deep speech 2, Listen, Attend and Spell (LAS), Transformer, Joint CTC-Attention LAS 등 다양한 딥러닝 모델을 지원하며, 특성 추출을 위한 다양한 옵션을 제공한다. 또한 모델의 구조와 특성을 자유롭게 선택할 수 있어, 한국어 음성 인식을 더욱 효율적으로 수행할 수 있다. KoSpeech는 한국어 음성 데이터셋 중 가장 큰 규모인 KsponSpeech를 학습할 수 있도록 지원하며, 음성인식 기능에서는 이 데이터셋을 활용하여 KoSpeech 툴킷을 훈련시켰다. 
+사용자가 말하는 음성을 녹음하고, 이 녹음된 음성을 텍스트로 변환하는 과정에서 '[kospeech](https://github.com/sooftware/kospeech?tab=readme-ov-file)' 모델을 사용한다. 
 
-[kospeech](https://github.com/sooftware/kospeech?tab=readme-ov-file)
+KoSpeech는 한국어 전문 자동 음성 인식(ASR)을 위한 오픈 소스 툴킷으로, PyTorch 기반으로 작동한다. 이 툴킷은 deep speech 2, Listen, Attend and Spell (LAS), Transformer, Joint CTC-Attention LAS 등 다양한 딥러닝 모델을 지원하며, 특성 추출을 위한 다양한 옵션을 제공한다. 또한 모델의 구조와 특성을 자유롭게 선택할 수 있어, 한국어 음성 인식을 더욱 효율적으로 수행할 수 있다. 
+
+KoSpeech는 한국어 음성 데이터셋 중 가장 큰 규모인 KsponSpeech를 학습할 수 있도록 지원하며, 음성인식 기능에서는 이 데이터셋을 활용하여 KoSpeech 툴킷을 훈련시켰다. 
+
 
 #### 2. 발음 분석
-변환된 텍스트를 분석하여 사용자의 발음이 얼마나 정확한지 평가한다. 이는 'SpeechFeedback'라는 알고리즘을 통해 진행한다. 
+변환된 텍스트를 분석하여 사용자의 발음이 얼마나 정확한지 평가한다. 이는 '[SpeechFeedback](https://github.com/DevTae/SpeechFeedback?tab=readme-ov-file)
+'라는 알고리즘을 통해 진행한다. 
 
 ‘SpeechFeedback’은 Python을 기반으로 하는 응용 프로그램으로, 사용자로부터 오디오 녹음을 요청하며, 녹음된 오디오는 sounddevice와 scipy.io.wavfile 라이브러리를 사용하여 PCM 파일로 저장된다. 
 
 ‘SpeechFeedback’에서 이 파일은 로컬에서 운영 중인 FastAPI 서버로 전송되어 사용자의 발음과 표준 IPA를 비교 분석한다. 하지만, 아동을 대상으로 하는 서비스의 특성상, IPA 대신 한국어로 표기한 발음과 비교분석하는 것으로 대체하였다. 
 
-[SpeechFeedback](https://github.com/DevTae/SpeechFeedback?tab=readme-ov-file)
 
 #### 3. 피드백 생성
 발음이 정확하지 않은 부분에 대해, 어떻게 발음을 개선할 수 있는지를 알려준다. 이 정보는 표준 한국어 데이터 파일(csv 파일)에 기록되어 있으며, 시스템은 이 파일을 읽고 사용자에게 발음을 개선할 수 있는 구체적인 조언을 제공한다. 
