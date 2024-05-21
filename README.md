@@ -23,7 +23,7 @@
 
 또한 다문화 가정의 학생들이 한국어를 배우는 데 있어 부모의 한국어 능력도 중요한 요소이나 결혼 이민자들의 한국어 능력이 유창하지 않은 경우가 많아, 이는 자녀와의 의사소통뿐만 아니라 자녀의 언어 발달에도 부정적인 영향을 미치고 있다.
 
-![다문화부모한글역량]()
+![다문화부모어려움](https://github.com/yyeongha/Dodam-Dodam/blob/main/img/%EB%8B%A4%EB%AC%B8%ED%99%94%EB%B6%80%EB%AA%A8%EC%96%B4%EB%A0%A4%EC%9B%80.png?raw=true)
 
 즉, 이러한 상황을 개선하기 위해 다문화 가정의 학생뿐만 아니라 부모를 위한 한국어 교육 서비스가 제공되어야 함을 시사한다. 
 
@@ -68,15 +68,11 @@
 * PyTorch version : 2.3.0
 
 ### 🖱 데이터
-* 책 : 국립어린이 청소년도서관 다국어동화구연 한국전래동화 API를 통해 책 제목, 내용, Image에 대한 데이터를 수집
-
-[국립어린이 청소년도서관 다국어동화구연-한국전래동화 API](https://www.culture.go.kr/data/openapi/openapiView.do?id=391&keyword=%EB%8B%A4%EA%B5%AD%EC%96%B4%EB%8F%99%ED%99%94%EA%B5%AC%EC%97%B0_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%9E%98%EB%8F%99%ED%99%94&searchField=all&gubun=A)
-    
-* 챗봇 : AI Hub 한국어 대화, 주제별 텍스트 일생 대화 데이터
-
-[AI Hub 한국어 대화](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=data&dataSetSn=116)
-
-[AI Hub 주제별 텍스트 일생 대화 데이터](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=543)
+|서비스|데이터설명|출처|주소|
+|:---:|:---:|:---:|:---:|
+|녹음 및 리포트 제공 서비스|한국전래동화|국립어린이 청소년도서관 다국어동화구연|https://www.culture.go.kr/data/openapi/openapiView.do?id=391&keyword=%EB%8B%A4%EA%B5%AD%EC%96%B4%EB%8F%99%ED%99%94%EA%B5%AC%EC%97%B0_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%9E%98%EB%8F%99%ED%99%94&searchField=all&gubun=A|
+|챗봇 기반의 상황극 기능|한국어 대화|AI Hub|https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=data&dataSetSn=116|
+|챗봇 기반의 상황극 기능|주제별 텍스트 일생 대화 데이터|AI Hub|https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=543|
 
 
 ### 🖱 기술 스택
