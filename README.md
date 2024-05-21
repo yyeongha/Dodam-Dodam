@@ -27,16 +27,16 @@
 
 ### * 챗봇 기반의 상황극 기능
 해당 서비스에서는 사용자가 몰입하고 싶은 다양한 상황 중 하나를 선택하여 실제로 경험할 수 있다. 선택한 시나리오에 맞춰 생성형 AI가 상황에 알맞은 대화를 제공하고, 사용자의 답변이 문맥에 맞는지 분석해준다. 또한 TTS와 STT 기술을 활용함으로써, 사용자는 마치 실제 상황에 있는 것처럼 자연스러운 대화를 경험할 수 있게 도와준다.
-![/3. 챗봇 기반의 상황극 기능](https://github.com/yyeongha/Dodam-Dodam/blob/main/img/3.%20%EC%B1%97%EB%B4%87%20%EA%B8%B0%EB%B0%98%EC%9D%98%20%EC%83%81%ED%99%A9%EA%B7%B9%20%EA%B8%B0%EB%8A%A5.png?raw=true)
+![3. 챗봇 기반의 상황극 기능](https://github.com/yyeongha/Dodam-Dodam/blob/main/img/3.%20%EC%B1%97%EB%B4%87%20%EA%B8%B0%EB%B0%98%EC%9D%98%20%EC%83%81%ED%99%A9%EA%B7%B9%20%EA%B8%B0%EB%8A%A5.png?raw=true)
 
 
 ## ☀️ ERD
 ![ERD](https://github.com/yyeongha/Dodam-Dodam/blob/main/img/erd.png?raw=true)
 
 총 3개의 TABLE로 구성되어있으며 각각의 TABLE의 역할은
-다음과 같다. \
-1. User: 유저에 대한 정보를 저장 \
-2. User_Feedback: 유저의 발음 중 부정확한 부분과 해당 부분의 음성을 저장 \
+다음과 같다.\ 
+1. User: 유저에 대한 정보를 저장\
+2. User_Feedback: 유저의 발음 중 부정확한 부분과 해당 부분의 음성을 저장\
 3. Book: 책 정보에 대한 데이터 저장
 
 
