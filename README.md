@@ -55,6 +55,8 @@
 #### 1. 음성인식
 사용자가 말하는 음성을 녹음하고, 이 녹음된 음성을 텍스트로 변환하는 과정에서 'KoSpeech' 모델을 사용한다. KoSpeech는 한국어 전문 자동 음성 인식(ASR)을 위한 오픈 소스 툴킷으로, PyTorch 기반으로 작동한다. 이 툴킷은 deep speech 2, Listen, Attend and Spell (LAS), Transformer, Joint CTC-Attention LAS 등 다양한 딥러닝 모델을 지원하며, 특성 추출을 위한 다양한 옵션을 제공한다. 또한 모델의 구조와 특성을 자유롭게 선택할 수 있어, 한국어 음성 인식을 더욱 효율적으로 수행할 수 있다. KoSpeech는 한국어 음성 데이터셋 중 가장 큰 규모인 KsponSpeech를 학습할 수 있도록 지원하며, 음성인식 기능에서는 이 데이터셋을 활용하여 KoSpeech 툴킷을 훈련시켰다. 
 
+[kospeech](https://github.com/sooftware/kospeech?tab=readme-ov-file)
+
 #### 2. 발음 분석
 변환된 텍스트를 분석하여 사용자의 발음이 얼마나 정확한지 평가한다. 이는 'SpeechFeedback'라는 알고리즘을 통해 진행한다. 
 
@@ -62,12 +64,17 @@
 
 ‘SpeechFeedback’에서 이 파일은 로컬에서 운영 중인 FastAPI 서버로 전송되어 사용자의 발음과 표준 IPA를 비교 분석한다. 하지만, 아동을 대상으로 하는 서비스의 특성상, IPA 대신 한국어로 표기한 발음과 비교분석하는 것으로 대체하였다. 
 
+[SpeechFeedback](https://github.com/DevTae/SpeechFeedback?tab=readme-ov-file)
+
 #### 3. 피드백 생성
 발음이 정확하지 않은 부분에 대해, 어떻게 발음을 개선할 수 있는지를 알려준다. 이 정보는 표준 한국어 데이터 파일(csv 파일)에 기록되어 있으며, 시스템은 이 파일을 읽고 사용자에게 발음을 개선할 수 있는 구체적인 조언을 제공한다. 
 
 이 과정을 통해 발음 피드백이 JSON 형식으로 출력되며, 이 피드백을 바탕으로 사용자의 발음이 정확할 경우 프로그램은 종료되고, 발음에 오류가 있을 경우 필요한 교정 사항(before)과 권장 발음(after)을 출력한다.
 
 반환하는 JSON 형식은 다음과 같다.
+
+![피드백1](https://github.com/yyeongha/Dodam-Dodam/blob/main/img/%ED%94%BC%EB%93%9C%EB%B0%B11.png?raw=true)
+![피드백2](https://github.com/yyeongha/Dodam-Dodam/blob/main/img/%ED%94%BC%EB%93%9C%EB%B0%B12.png?raw=true)
 
 #### 4. 리포트 생성 기능
 리포트 생성은 ‘3. 피드백 생성’을 통해 반환하는 JSON 값을 기반으로, 생성형AI 기능 중 설명 가능한 AI인 XAI를 통해 제공한다. Prompt Engineering은 ‘3. 피드백 생성‘에서 제공한 “answer“, “user“, “feedback“을 입력 값으로 제공하면 발음에 대한 긍정적인 평가와 주의해야할 부분에 대한 피드백을 생성한다. 
@@ -89,7 +96,7 @@
 #### 3. TTS와 ChatGPT를 이용한 상황극 대화 기능
 사용자가 대화를 이어나가면서 인공지능(AI)은 적절한 응답을 계속 제공한다. 만약 사용자가 "나가기"라고 입력하면 대화가 종료되고 상황극은 끝나게 된다. 사용자와의 대화 중에 AI는 제공한 응답을 텍스트로 보여주고, 이를 음성으로 변환하여 사용자에게 들려준다. 이러한 과정을 통해 대화가 더욱 자연스럽고 생동감 있게 이루어질 수 있다.
 
-![상황극]()
+![상황극](https://github.com/yyeongha/Dodam-Dodam/blob/main/img/%EC%83%81%ED%99%A9%EA%B7%B9.png?raw=true)
 
 ## 🖥️ 개발환경
 ### 🖱 환경
