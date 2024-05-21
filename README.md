@@ -68,9 +68,9 @@
 * PyTorch version : 2.3.0
 
 ### 🖱 데이터
-|서비스|데이터설명|출처|주소|
+|서비스&nbsp;&nbsp;&nbsp;&nbsp;|데이터설명|출처&nbsp;&nbsp;&nbsp;&nbsp;|주소&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 |:---:|:---:|:---:|:---:|
-|녹음 및 리포트 제공 서비스&nbsp;&nbsp;&nbsp;|한국전래동화|국립어린이 청소년도서관 다국어동화구연|https://www.culture.go.kr/data/openapi/openapiView.do?id=391&keyword=%EB%8B%A4%EA%B5%AD%EC%96%B4%EB%8F%99%ED%99%94%EA%B5%AC%EC%97%B0_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%9E%98%EB%8F%99%ED%99%94&searchField=all&gubun=A|
+|녹음 및 리포트 제공 서비스|한국전래동화|국립어린이 청소년도서관 다국어동화구연|https://www.culture.go.kr/data/openapi/openapiView.do?id=391&keyword=%EB%8B%A4%EA%B5%AD%EC%96%B4%EB%8F%99%ED%99%94%EA%B5%AC%EC%97%B0_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%9E%98%EB%8F%99%ED%99%94&searchField=all&gubun=A|
 |챗봇 기반의 상황극 기능|한국어 대화|AI Hub|https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=data&dataSetSn=116|
 |챗봇 기반의 상황극 기능|주제별 텍스트 일생 대화 데이터|AI Hub|https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=543|
 
