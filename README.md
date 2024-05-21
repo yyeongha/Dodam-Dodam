@@ -1,6 +1,15 @@
 # 📚 도담도담  
 다문화 가정 학생과 부모를 위한 AI 한국어 교육 지원 및 발음 향상 어플리케이션
 
+## Table of contents
+0. [폴더 구조]()
+1. [프로젝트 진행기간]()
+2. [배경]()
+3. [개요]()
+4. [주요기능]()
+5. [개발환경]()
+6. [ERD]()
+
 ## 🏃 프로젝트 진행기간 🏃
 2024.04.08 ~ 2024.04.28
 
@@ -43,8 +52,7 @@
 또한 TTS와 STT 기술을 활용함으로써, 사용자는 마치 실제 상황에 있는 것처럼 자연스러운 대화를 경험할 수 있게 도와준다.
 
 ## 🖥️ 개발환경
-### 🖱 실험 환경
-* Docker Image : devtae/kospeech
+### 🖱 환경
 * CPU : Intel(R) Core(TM) i5-8265U
 * GPU : NVIDIA GeForce RTX 3060 
 * CUDA version : 11.8
@@ -61,9 +69,6 @@
 
 [AI Hub 주제별 텍스트 일생 대화 데이터](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=543)
 
-* opanai api
-* kospeech
-* speechfeedback
 
 ### 🖱 기술 스택
 
